@@ -53,6 +53,7 @@
 
 
 import { useEffect, useState } from "react";
+import Footer from "./Footer";
 
 export default function EventSchedule() {
   const [sessions, setSessions] = useState([]);
@@ -97,6 +98,7 @@ export default function EventSchedule() {
   }, []);
 
   return (
+    <>
     <div style={{ padding: "2rem", backgroundColor: "#F5F5F5", minHeight: "100vh" }}>
       {/* Hero Section */}
 <div
@@ -147,5 +149,6 @@ export default function EventSchedule() {
         ))}
       </div>
     </div>
+    <Footer/></>
   );
 }

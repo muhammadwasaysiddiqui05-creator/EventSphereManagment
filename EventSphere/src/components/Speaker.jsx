@@ -66,6 +66,7 @@ import { useEffect, useState } from "react";
 import speaker1 from "../assets/speaker1.jpg"; // Replace with your images
 import speaker2 from "../assets/speaker2.jpg";
 import speaker3 from "../assets/speaker3.jpg";
+import Footer from "./Footer";
 
 export default function Speakers() {
   const [speakers, setSpeakers] = useState([]);
@@ -99,7 +100,29 @@ export default function Speakers() {
   }, []);
 
   return (
+    <>
     <div style={{ padding: "2rem", backgroundColor: "#F5F5F5", minHeight: "100vh" }}>
+      {/* Speakers Section */}
+<div
+  style={{
+    backgroundImage:
+      "linear-gradient(to bottom right, rgba(10,10,40,0.75), rgba(30,20,60,0.85)), url('/mnt/data/ee.PNG')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    padding: "120px 20px",
+    textAlign: "center",
+    color: "white",
+    marginBottom: "40px",
+  }}
+>
+  <h1 style={{ fontSize: "3rem", fontWeight: "800" }}>
+    Our <span style={{ color: "#F8B324" }}>Speakers</span>
+  </h1>
+  <p style={{ fontSize: "1.1rem", marginTop: "10px", opacity: 0.9 }}>
+    Meet the industry experts and thought leaders who’ve shared their knowledge at our events.
+  </p>
+</div>
+
       <h2 style={{ color: "#4A2E80", marginBottom: "1.5rem" }}>🎤 Speakers</h2>
       
       <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap" }}>
@@ -139,5 +162,7 @@ export default function Speakers() {
         ))}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }

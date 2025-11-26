@@ -73,6 +73,7 @@
 
 
 import { useEffect, useState } from "react";
+import Footer from "./Footer";
 
 export default function PastEvents() {
   const [events, setEvents] = useState([]);
@@ -111,6 +112,7 @@ export default function PastEvents() {
   }, []);
 
   return (
+      <>
     <div style={{ padding: "2rem", backgroundColor: "#F5F5F5", minHeight: "100vh" }}>
       {/* Past Events */}
 <div
@@ -178,5 +180,6 @@ export default function PastEvents() {
         ))}
       </div>
     </div>
+    <Footer/></>
   );
 }

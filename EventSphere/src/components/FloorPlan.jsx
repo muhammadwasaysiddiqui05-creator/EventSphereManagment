@@ -131,6 +131,7 @@
 
 import { useEffect, useState } from "react";
 import floorPlanImg from "../assets/floorplan-placeholder.jpg"; // make sure this path is correct
+import Footer from "./Footer";
 
 export default function FloorPlan() {
   const [floorPlan, setFloorPlan] = useState(null);
@@ -145,6 +146,7 @@ export default function FloorPlan() {
   }, []);
 
   return (
+    <>
     <div style={{ padding: "2rem", backgroundColor: "#F5F5F5", minHeight: "100vh" }}>
       
       {/* Hero Section */}
@@ -222,5 +224,7 @@ export default function FloorPlan() {
         <p style={{ color: "#1D1A3A", textAlign: "center" }}>Loading floor plan...</p>
       )}
     </div>
+    <Footer/>
+    </>
   );
 }

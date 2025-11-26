@@ -1,6 +1,8 @@
 import React from "react";
-
+import HowItWorks from './HowItWork';
+import { useNavigate } from "react-router-dom";
 const Banner = () => {
+  const navigate = useNavigate();
   return (
     <div
       className="w-100"
@@ -48,6 +50,7 @@ const Banner = () => {
           <button
             className="btn btn-outline-light px-4 py-2"
             style={{ borderRadius: "8px", fontWeight: "600" }}
+            onClick={() => navigate("/HowItWorks")}
           >
             How it Works
           </button>

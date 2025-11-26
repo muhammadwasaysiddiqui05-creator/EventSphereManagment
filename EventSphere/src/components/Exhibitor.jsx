@@ -66,6 +66,7 @@
 
 
 import { useEffect, useState } from "react";
+import Footer from "./Footer";
 
 export default function Exhibitors() {
   const [exhibitors, setExhibitors] = useState([]);
@@ -104,6 +105,7 @@ export default function Exhibitors() {
   }, []);
 
   return (
+    <>
     <div style={{ padding: "2rem", backgroundColor: "#F5F5F5", minHeight: "100vh" }}>
       <div
   style={{
@@ -169,5 +171,6 @@ export default function Exhibitors() {
         ))}
       </div>
     </div>
+    <Footer/></>
   );
 }

@@ -1,5 +1,8 @@
 // const Footer = () => {
 import FAQ from './FAQ';
+import Blog from './Blog';
+import TermsOfService from './TermsofService';
+import PrivacyPolicy from './PrivacyPolicy';
 //   return (
 //     <footer className="bg-dark text-light py-5">
 //       <div className="container">
@@ -83,20 +86,21 @@ const Footer = () => {
             <a href="/" className="d-block text-light mb-1">Home</a>
             <a href="/events" className="d-block text-light mb-1">Browse Events</a>
             <a href="/how-it-works" className="d-block text-light mb-1">How It Works</a>
-            <a href="/FAQ" className="d-block text-light mb-1">FAQ</a>
-            <a href="/blog" className="d-block text-light mb-1">Blog</a>
-            <a href="/terms" className="d-block text-light mb-1">Terms of Service</a>
-            <a href="/privacy" className="d-block text-light mb-1">Privacy Policy</a>
+            
           </div>
 
           {/* Services */}
           <div className="col-md-3 mb-4">
             <h5 style={{ color: "#f4b21d" }} className="mb-3">Our Services</h5>
+            <a href="/FAQ" className="d-block text-light mb-1">FAQ</a>
+            <a href="/Blog" className="d-block text-light mb-1">Blog</a>
+            <a href="/TermsOfService" className="d-block text-light mb-1">Terms of Service</a>
+            <a href="/PrivacyPolicy" className="d-block text-light mb-1">Privacy Policy</a>
             {/* <a href="/services/wedding" className="d-block text-light mb-1">Wedding Planning</a> */}
-            <a href="/services/corporate" className="d-block text-light mb-1">Corporate Events</a>
+            {/* <a href="/services/corporate" className="d-block text-light mb-1">Corporate Events</a> */}
             {/* <a href="/services/birthday" className="d-block text-light mb-1">Birthday Parties</a> */}
-            <a href="/services/concerts" className="d-block text-light mb-1">Concert Venues</a>
-            <a href="/services/exhibitions" className="d-block text-light mb-1">Exhibition Halls</a>
+            {/* <a href="/services/concerts" className="d-block text-light mb-1">Concert Venues</a> */}
+            {/* <a href="/services/exhibitions" className="d-block text-light mb-1">Exhibition Halls</a> */}
             {/* <a href="/services/catering" className="d-block text-light mb-1">Catering Services</a> */}
           </div>
 

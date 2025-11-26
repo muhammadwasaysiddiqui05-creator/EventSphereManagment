@@ -7,6 +7,8 @@ import FloorPlan from './FloorPlan';
 import EventSchedule from './EventSchedule';
 import Speakers from './Speaker';
 import HowItWorks from './HowItWork';
+import Signup from './../pages/Signup';
+import Profile from './ProfilePage';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,6 +69,9 @@ const Navbar = () => {
             <li className="nav-item">
               <Link className="nav-link fw-semibold" to="/about">About Us</Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link fw-semibold" to="/Profile">Profile</Link>
+            </li>
 
             <li className="nav-item">
               <Link className="nav-link fw-semibold" to="/contact">Contact</Link>
@@ -84,14 +89,14 @@ const Navbar = () => {
             </Link>
 
             <Link
-              to="/book"
+              to="/Signup"
               className="btn text-white px-4"
               style={{
                 backgroundColor: "#5A2EED",
                 borderRadius: "30px"
               }}
             >
-              Book Now
+              Signup
             </Link>
           </div>
 

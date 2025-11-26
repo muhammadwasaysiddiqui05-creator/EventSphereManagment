@@ -1,10 +1,10 @@
 import React from "react";
 
 const testimonials = [
-  { id: 1, name: "James William", role: "Wedding", text: "Eventify made planning our wedding incredibly easy. The venue was perfect and the service was exceptional!", avatar: "/et.png" },
-  { id: 2, name: "Jacob Jones", role: "Corporate Event", text: "Eventify made planning our wedding incredibly easy. The venue was perfect and the service was exceptional!", avatar: "/et.png" },
-  { id: 3, name: "Albert Flores", role: "Birthday Party", text: "Eventify made planning our wedding incredibly easy. The venue was perfect and the service was exceptional!", avatar: "/et.png" },
-  { id: 4, name: "Jenny Wilson", role: "Concert", text: "Eventify made planning our wedding incredibly easy. The venue was perfect and the service was exceptional!", avatar: "/et.png" },
+  { id: 1, name: "James William", role: "Wedding", text: "Eventify made planning our wedding incredibly easy. The venue was perfect and the service was exceptional!", avatar: "/src/assets/p2.png" },
+  { id: 2, name: "Jacob Jones", role: "Corporate Event", text: "Eventify made planning our wedding incredibly easy. The venue was perfect and the service was exceptional!", avatar: "/src/assets/p3.png" },
+  { id: 3, name: "Albert Flores", role: "Birthday Party", text: "Eventify made planning our wedding incredibly easy. The venue was perfect and the service was exceptional!", avatar: "/src/assets/p1.png" },
+  { id: 4, name: "Jenny Wilson", role: "Concert", text: "Eventify made planning our wedding incredibly easy. The venue was perfect and the service was exceptional!", avatar: "/src/assets/p4.png" },
 ];
 
 export default function Testimonials() {

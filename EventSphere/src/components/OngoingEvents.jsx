@@ -35,6 +35,7 @@
 
 
 import { useEffect, useState } from "react";
+import Footer from "./Footer";
 
 export default function OngoingEvents() {
   const [events, setEvents] = useState([]);
@@ -75,6 +76,7 @@ export default function OngoingEvents() {
   }, []);
 
   return (
+    <>
     <div style={{ padding: "2rem", backgroundColor: "#F5F5F5", minHeight: "100vh" }}>
       
 {/* Ongoing Events */}
@@ -143,5 +145,7 @@ export default function OngoingEvents() {
         ))}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }

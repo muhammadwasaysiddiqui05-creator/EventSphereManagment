@@ -13,7 +13,7 @@ import Wishlist from "./components/Wishlist";
 import { useEffect } from 'react';
 import { useState } from 'react';
 import axios from 'axios';
-import AddProduct from "./pages/AddProduct";
+// import AddUpcomingEvent from "./pages/AddUpcomingEvent";
 import UpcomingEvents from "./components/UpcomingEvents";
 import OngoingEvents from "./components/OngoingEvents";
 import PastEvents from "./components/PastEvents";
@@ -23,6 +23,14 @@ import EventSchedule from "./components/EventSchedule";
 import Speakers from "./components/Speaker";
 import HowItWorks from "./components/HowItWork";
 import FAQ from "./components/FAQ";
+import Blog from "./components/Blog";
+import TermsOfService from "./components/TermsofService";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import Profile from "./components/ProfilePage";
+import Events from "./components/Events";
+import AllEventsPage from "./components/AllEvents";
+// import AddFAQ from "./pages/AddUpcomingEvent";
+// import AddUpcomingEvent from "./pages/AddUpcomingEvent";
 
 function App() {
 
@@ -51,8 +59,14 @@ function App() {
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/wishlist" element={<Wishlist />} />
-        <Route path="/add" element={<AddProduct />} />
+        {/* <Route path="/add" element={<AddFAQ />} /> */}
         <Route path="/FAQ" element={<FAQ />} />
+        <Route path="/Blog" element={<Blog />} />
+        <Route path="/TermsOfService" element={<TermsOfService />} />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        <Route path="/Profile" element={<Profile />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/AllEventsPage" element={<AllEventsPage />} />
       </Routes>
     </>
   );
